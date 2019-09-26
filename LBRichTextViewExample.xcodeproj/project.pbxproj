@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FDAE0A881DA364B9DAB3348 /* libPods-LBRichTextViewExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6426FA0C1CB2D2734A4C42 /* libPods-LBRichTextViewExample.a */; };
+		409A2B55233C49B500472234 /* LBRichTextViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 409A2B4C233C49B500472234 /* LBRichTextViewTestVC.m */; };
+		409A2B56233C49B500472234 /* NoteVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409A2B4F233C49B500472234 /* NoteVoiceView.m */; };
+		409A2B57233C49B500472234 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409A2B51233C49B500472234 /* VideoView.m */; };
+		409A2B58233C49B500472234 /* NoteImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409A2B52233C49B500472234 /* NoteImageView.m */; };
+		409BD0A4233B7148005DA0B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 409BD0A3233B7148005DA0B9 /* AppDelegate.m */; };
+		409BD0AD233B7148005DA0B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409BD0AB233B7148005DA0B9 /* Main.storyboard */; };
+		409BD0AF233B714B005DA0B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409BD0AE233B714B005DA0B9 /* Assets.xcassets */; };
+		409BD0B2233B714B005DA0B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409BD0B0233B714B005DA0B9 /* LaunchScreen.storyboard */; };
+		409BD0B5233B714B005DA0B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 409BD0B4233B714B005DA0B9 /* main.m */; };
+		409BD0BC233B7215005DA0B9 /* LBRichTextView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 409BD0BB233B7215005DA0B9 /* LBRichTextView.podspec */; };
+		409BD0C0233B7222005DA0B9 /* LBRichTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409BD0BE233B7222005DA0B9 /* LBRichTextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C6426FA0C1CB2D2734A4C42 /* libPods-LBRichTextViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBRichTextViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		409A2B4C233C49B500472234 /* LBRichTextViewTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBRichTextViewTestVC.m; sourceTree = "<group>"; };
+		409A2B4D233C49B500472234 /* LBRichTextViewTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBRichTextViewTestVC.h; sourceTree = "<group>"; };
+		409A2B4F233C49B500472234 /* NoteVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteVoiceView.m; sourceTree = "<group>"; };
+		409A2B50233C49B500472234 /* NoteImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteImageView.h; sourceTree = "<group>"; };
+		409A2B51233C49B500472234 /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
+		409A2B52233C49B500472234 /* NoteImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteImageView.m; sourceTree = "<group>"; };
+		409A2B53233C49B500472234 /* NoteVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteVoiceView.h; sourceTree = "<group>"; };
+		409A2B54233C49B500472234 /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
+		409BD09F233B7148005DA0B9 /* LBRichTextViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBRichTextViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		409BD0A2233B7148005DA0B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		409BD0A3233B7148005DA0B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		409BD0AC233B7148005DA0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		409BD0AE233B714B005DA0B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		409BD0B1233B714B005DA0B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		409BD0B3233B714B005DA0B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409BD0B4233B714B005DA0B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		409BD0BB233B7215005DA0B9 /* LBRichTextView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LBRichTextView.podspec; sourceTree = "<group>"; };
+		409BD0BE233B7222005DA0B9 /* LBRichTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBRichTextView.m; sourceTree = "<group>"; };
+		409BD0BF233B7222005DA0B9 /* LBRichTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBRichTextView.h; sourceTree = "<group>"; };
+		74A94DCBF746642A99C20E99 /* Pods-LBRichTextViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBRichTextViewExample.release.xcconfig"; path = "Target Support Files/Pods-LBRichTextViewExample/Pods-LBRichTextViewExample.release.xcconfig"; sourceTree = "<group>"; };
+		93A85DE781F0ABE3D2CC625B /* Pods-LBRichTextViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBRichTextViewExample.debug.xcconfig"; path = "Target Support Files/Pods-LBRichTextViewExample/Pods-LBRichTextViewExample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		409BD09C233B7148005DA0B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FDAE0A881DA364B9DAB3348 /* libPods-LBRichTextViewExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14BE1D195394DCCC92DC5F54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6426FA0C1CB2D2734A4C42 /* libPods-LBRichTextViewExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		409A2B4B233C49B500472234 /* LBRichTextViewTestVC */ = {
+			isa = PBXGroup;
+			children = (
+				409A2B4D233C49B500472234 /* LBRichTextViewTestVC.h */,
+				409A2B4C233C49B500472234 /* LBRichTextViewTestVC.m */,
+				409A2B4E233C49B500472234 /* Views */,
+			);
+			path = LBRichTextViewTestVC;
+			sourceTree = "<group>";
+		};
+		409A2B4E233C49B500472234 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				409A2B53233C49B500472234 /* NoteVoiceView.h */,
+				409A2B4F233C49B500472234 /* NoteVoiceView.m */,
+				409A2B50233C49B500472234 /* NoteImageView.h */,
+				409A2B52233C49B500472234 /* NoteImageView.m */,
+				409A2B54233C49B500472234 /* VideoView.h */,
+				409A2B51233C49B500472234 /* VideoView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		409BD096233B7148005DA0B9 = {
+			isa = PBXGroup;
+			children = (
+				409BD0BB233B7215005DA0B9 /* LBRichTextView.podspec */,
+				409BD0A1233B7148005DA0B9 /* LBRichTextViewExample */,
+				409BD0A0233B7148005DA0B9 /* Products */,
+				CBFDE3BA5BB36381EB72027C /* Pods */,
+				14BE1D195394DCCC92DC5F54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		409BD0A0233B7148005DA0B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				409BD09F233B7148005DA0B9 /* LBRichTextViewExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		409BD0A1233B7148005DA0B9 /* LBRichTextViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				409BD0BD233B7222005DA0B9 /* LBRichTextView */,
+				409A2B4B233C49B500472234 /* LBRichTextViewTestVC */,
+				409BD0A2233B7148005DA0B9 /* AppDelegate.h */,
+				409BD0A3233B7148005DA0B9 /* AppDelegate.m */,
+				409BD0AB233B7148005DA0B9 /* Main.storyboard */,
+				409BD0AE233B714B005DA0B9 /* Assets.xcassets */,
+				409BD0B0233B714B005DA0B9 /* LaunchScreen.storyboard */,
+				409BD0B3233B714B005DA0B9 /* Info.plist */,
+				409BD0B4233B714B005DA0B9 /* main.m */,
+			);
+			path = LBRichTextViewExample;
+			sourceTree = "<group>";
+		};
+		409BD0BD233B7222005DA0B9 /* LBRichTextView */ = {
+			isa = PBXGroup;
+			children = (
+				409BD0BF233B7222005DA0B9 /* LBRichTextView.h */,
+				409BD0BE233B7222005DA0B9 /* LBRichTextView.m */,
+			);
+			path = LBRichTextView;
+			sourceTree = SOURCE_ROOT;
+		};
+		CBFDE3BA5BB36381EB72027C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93A85DE781F0ABE3D2CC625B /* Pods-LBRichTextViewExample.debug.xcconfig */,
+				74A94DCBF746642A99C20E99 /* Pods-LBRichTextViewExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		409BD09E233B7148005DA0B9 /* LBRichTextViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409BD0B8233B714B005DA0B9 /* Build configuration list for PBXNativeTarget "LBRichTextViewExample" */;
+			buildPhases = (
+				B126CC0D3CB360E1F63E120A /* [CP] Check Pods Manifest.lock */,
+				409BD09B233B7148005DA0B9 /* Sources */,
+				409BD09C233B7148005DA0B9 /* Frameworks */,
+				409BD09D233B7148005DA0B9 /* Resources */,
+				DC6847CB0103436722D20069 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBRichTextViewExample;
+			productName = LBRichTextViewExample;
+			productReference = 409BD09F233B7148005DA0B9 /* LBRichTextViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		409BD097233B7148005DA0B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "刘彬";
+				TargetAttributes = {
+					409BD09E233B7148005DA0B9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 409BD09A233B7148005DA0B9 /* Build configuration list for PBXProject "LBRichTextViewExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 409BD096233B7148005DA0B9;
+			productRefGroup = 409BD0A0233B7148005DA0B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				409BD09E233B7148005DA0B9 /* LBRichTextViewExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		409BD09D233B7148005DA0B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409BD0B2233B714B005DA0B9 /* LaunchScreen.storyboard in Resources */,
+				409BD0AF233B714B005DA0B9 /* Assets.xcassets in Resources */,
+				409BD0BC233B7215005DA0B9 /* LBRichTextView.podspec in Resources */,
+				409BD0AD233B7148005DA0B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B126CC0D3CB360E1F63E120A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LBRichTextViewExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC6847CB0103436722D20069 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LBRichTextViewExample/Pods-LBRichTextViewExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LBRichTextViewExample/Pods-LBRichTextViewExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LBRichTextViewExample/Pods-LBRichTextViewExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		409BD09B233B7148005DA0B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409A2B57233C49B500472234 /* VideoView.m in Sources */,
+				409BD0A4233B7148005DA0B9 /* AppDelegate.m in Sources */,
+				409BD0B5233B714B005DA0B9 /* main.m in Sources */,
+				409BD0C0233B7222005DA0B9 /* LBRichTextView.m in Sources */,
+				409A2B55233C49B500472234 /* LBRichTextViewTestVC.m in Sources */,
+				409A2B58233C49B500472234 /* NoteImageView.m in Sources */,
+				409A2B56233C49B500472234 /* NoteVoiceView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		409BD0AB233B7148005DA0B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409BD0AC233B7148005DA0B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		409BD0B0233B714B005DA0B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409BD0B1233B714B005DA0B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		409BD0B6233B714B005DA0B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		409BD0B7233B714B005DA0B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		409BD0B9233B714B005DA0B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93A85DE781F0ABE3D2CC625B /* Pods-LBRichTextViewExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L8YGY7ZJ2;
+				INFOPLIST_FILE = LBRichTextViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LBRichTextViewExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		409BD0BA233B714B005DA0B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74A94DCBF746642A99C20E99 /* Pods-LBRichTextViewExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8L8YGY7ZJ2;
+				INFOPLIST_FILE = LBRichTextViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.LBRichTextViewExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		409BD09A233B7148005DA0B9 /* Build configuration list for PBXProject "LBRichTextViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409BD0B6233B714B005DA0B9 /* Debug */,
+				409BD0B7233B714B005DA0B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409BD0B8233B714B005DA0B9 /* Build configuration list for PBXNativeTarget "LBRichTextViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409BD0B9233B714B005DA0B9 /* Debug */,
+				409BD0BA233B714B005DA0B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 409BD097233B7148005DA0B9 /* Project object */;
+}
