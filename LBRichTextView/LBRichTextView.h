@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol LBRichTextProtocol <NSObject>//富文本对象协议
 //attachmentView优先使用，也就是当attachmentView不为空的时候attributedString无效。
-//属性必须有一个不为空
+//必须有一个不为空
 @required
 @property (nonatomic,strong)NSAttributedString *attributedString;
 @property (nonatomic,strong)UIView<LBTextAttachmentViewProtocol> *attachmentView;

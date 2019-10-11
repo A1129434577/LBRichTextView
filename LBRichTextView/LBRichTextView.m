@@ -4,10 +4,15 @@
 //
 //  Created by 刘彬 on 2019/7/18.
 //  Copyright © 2019 BIN. All rights reserved.
-//  运行时系统会报一个未找到方法调用的错，该错误是由于借用image属性存lb_identifier导致，不影响，可以忽略
 
 #import "LBRichTextView.h"
 #import <AVFoundation/AVFoundation.h>
+
+@interface LBTextAttachment : NSTextAttachment
+@property (nonatomic,copy)NSString *lb_identifier;
+@end
+@implementation LBTextAttachment
+@end
 
 @interface LBRichTextView ()<UITextViewDelegate>
 @end
@@ -40,10 +45,9 @@
     [_richTextArray enumerateObjectsUsingBlock:^(NSObject<LBRichTextProtocol> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         if (obj.attachmentView) {
-            NSTextAttachment *textAttachment = [[NSTextAttachment alloc] init];
-        //iOS13以前可以通过只设置contents而不设置fileType创建一个空白的NSTextAttachment区域，但是iOS13以后NSTextAttachment默认都有一个系统图标占位，所以该设置方法弃用，改用image属性借用
-            //textAttachment.contents = [obj.attachmentView.lb_identifier dataUsingEncoding:NSUTF8StringEncoding];
-            textAttachment.image = (UIImage *)obj.attachmentView.lb_identifier;
+            LBTextAttachment *textAttachment = [[LBTextAttachment alloc] init];
+            textAttachment.image = [[UIImage alloc] init];//设置一个空的image去掉系统NSTextAttachment自带图标
+            textAttachment.lb_identifier = obj.attachmentView.lb_identifier;
             textAttachment.bounds = CGRectMake(0, 0, CGRectGetWidth(obj.attachmentView.bounds), CGRectGetHeight(obj.attachmentView.bounds));
             NSMutableAttributedString *attachmentAttributedString = [[NSMutableAttributedString alloc] initWithAttributedString:[NSAttributedString attributedStringWithAttachment:textAttachment]];
             if (obj.attachmentView.paragraphStyle) {
@@ -75,8 +79,8 @@
         
         NSObject<LBRichTextProtocol> *richText;
         
-        NSTextAttachment *attachment = attrs[NSAttachmentAttributeName];
-        if (attachment.image && ![attachment.image isKindOfClass:UIImage.class]) {//如果是借用的image存lb_identifier则是自定义view
+        LBTextAttachment *attachment = attrs[NSAttachmentAttributeName];
+        if ([attachment isKindOfClass:LBTextAttachment.self] && attachment.lb_identifier) {//如果有lb_identifier则是自定义view
             //取该range所在textView的frame
             UITextPosition *beginning = weakSelf.beginningOfDocument;
             UITextPosition *start = [weakSelf positionFromPosition:beginning offset:range.location];
@@ -84,9 +88,8 @@
             UITextRange *textRange = [weakSelf textRangeFromPosition:start toPosition:end];
             CGRect rect = [weakSelf firstRectForRange:textRange];
             
-            
             richText = [weakSelf.richTextArray filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(NSObject<LBRichTextProtocol> *evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
-                return [evaluatedObject.attachmentView.lb_identifier isEqual:attachment.image];
+                return [evaluatedObject.attachmentView.lb_identifier isEqual:attachment.lb_identifier];
             }]].firstObject;
             if (richText.attachmentView) {
                 rect.size.width = CGRectGetWidth(richText.attachmentView.bounds);
@@ -126,3 +129,5 @@
 @end
 @implementation LBRichTextObject
 @end
+
+
