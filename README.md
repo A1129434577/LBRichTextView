@@ -21,4 +21,4 @@ richText.attachmentView = voiceView;
 [self.textView.richTextArray insertObject:richText atIndex:index];//插入当前输入点
 [self.textView reloadData];//重要的一步：刷新
 ```
-![]()
+![](https://github.com/A1129434577/LBRichTextView/blob/master/LBRichTextView.gif?raw=true)
