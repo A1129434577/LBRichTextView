@@ -122,7 +122,10 @@
         }
     }];
 }
-
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    [self textViewDidChange:self];
+}
 @end
 
 @implementation LBTextAttachmentView
