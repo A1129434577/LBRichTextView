@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "LBRichTextView"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "支持各种自定义类型输入的强大RichTextView"
   spec.description  = "一个可以支持图片输入，视频输入，语音输入，类似于iOS系统自带的备忘录，可以定义View输入的强大富文本RichTextView。"
   spec.homepage     = "https://github.com/A1129434577/LBRichTextView"
